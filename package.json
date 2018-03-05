@@ -24,7 +24,5 @@
     "url": "https://github.com/krishnaclouds/time-consolelog/issues"
   },
   "homepage": "https://github.com/krishnaclouds/time-consolelog#readme",
-  "dependencies": {
-    "time-stamp": "^2.0.0"
-  }
+  "dependencies": false
 }

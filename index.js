@@ -1,4 +1,4 @@
-const ts = require('time-stamp');
+const ts = require('./timeStamp');
 
 /*!
  * time-logger <https://github.com/krishnaclouds/time-consolelog>
