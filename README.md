@@ -16,4 +16,4 @@ Conole Log your message along with Time => Time-ConsoleLog
 
 ## Sample Output:
 
-    [2018-03-02] Test Message
+    [13:27:18] Test Message
