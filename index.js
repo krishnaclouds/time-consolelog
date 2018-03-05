@@ -14,6 +14,13 @@ const ts = require('time-stamp');
  * @return {String} `Console log message!`
  */
 
-module.exports = function (msg) {
-    console.log("[" + ts('HH:mm:ss') + "] " + msg);
-}
+module.exports = function (msg , pattern) {
+
+    pattern = typeof pattern !== 'undefined' ? pattern : 'HH:mm:ss';
+
+    if(pattern == false){
+        console.log(msg);
+    } else {
+        console.log("[" + ts(pattern) + "] " + msg);
+    }
+};
