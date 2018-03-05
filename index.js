@@ -15,5 +15,5 @@ const ts = require('time-stamp');
  */
 
 module.exports = function (msg) {
-    console.log("[" + ts() + "] " + msg);
+    console.log("[" + ts('HH:mm:ss') + "] " + msg);
 }
