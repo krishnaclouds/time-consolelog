@@ -1,6 +1,5 @@
-Time-ConsoleLog
+Time-ConsoleLog: Console Log your message along with Time
 =======================================
-    Conole Log your message along with Time
 
 ## Install
 
