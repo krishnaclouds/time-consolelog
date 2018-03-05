@@ -1,5 +1,6 @@
-Conole Log your message along with Time => Time-ConsoleLog
+Time-ConsoleLog
 =======================================
+    Conole Log your message along with Time
 
 ## Install
 
