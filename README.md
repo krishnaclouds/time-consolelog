@@ -33,12 +33,12 @@ log('Test Message');
 ```
 ---
 ```js
-log('Test Message' , 'YYYYMMDD'); </code>
+log('Test Message' , 'YYYYMMDD');
 // [2070514] Test Message
 ```
 ---
 ```js
-log('Test Message , 'YYYYMMDD:ss');
+log('Test Message , "YYYYMMDD:ss");
 // [20170514:10] Test Message
 ```
 
