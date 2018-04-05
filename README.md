@@ -1,62 +1,110 @@
-# Time-ConsoleLog
-### Console Log your message along with Time
+## Time-ConsoleLog
+#### Console Log your message along with Time Stamp
 
+---
+## Installation
 
-## Install
-
-    npm install --save time-consolelog
-
+```bash
+npm install --save time-consolelog
+```
+---
 ## Usage 
 
-<code> const log = require('time-consolelog'); </code>
+```js
+const log = require('time-consolelog');
+```
 
-<code> log(String message , String Pattern); </code>
+```js
+log(String message , String Pattern);
+```
+---
+###### If You want to log without any time/Date, set Pattern to false
+---
 
-// If You want to log without any time/Date, set Pattern = false
-<code> log('Test Message' , false); </code>
-<br/>// Test Message
+```js
+log('Test Message' , false);
+// Test Message
+```
+---
+```js
+log('Test Message');
+// When no Pattern is Provided - Default Time Stamp is used
+// [15:47:28] Test Message
+```
+---
+```js
+log('Test Message' , 'YYYYMMDD'); </code>
+// [2070514] Test Message
+```
+---
+```js
+log('Test Message , 'YYYYMMDD:ss');
+// [20170514:10] Test Message
+```
 
-<code> log('Test Message'); </code> // => When no Pattern is Provided - Default Time Stamp is used
-<br/>// [15:47:28] Test Message
+```js
+log('Test Message','YYYY/MM/DD:mm:ss');
+// [2017/05/04:30:10] Test Message
+```
 
-<code> log('Test Message' , 'YYYYMMDD'); </code>
-<br/>// [2070514] Test Message
+```js
+log('Test Message','YYYY:MM:DD');
+// [20170514] Test Message
+```
 
-<code> log('Test Message , 'YYYYMMDD:ss'); </code>
-<br/>// [20170514:10] Test Message
+```js
+log('Test Message','[YYYY:MM:DD]');
+// [017:0:14] Test Message
+```
 
-<code> log('Test Message','YYYY/MM/DD:mm:ss'); </code>
-<br/>// [2017/05/04:30:10] Test Message
+```js
+log('Test Message','YYYY/MM/DD');
+// [2017/05/14] Test Message
+```
 
-<code> log('Test Message','YYYY:MM:DD'); </code>
-<br/>// [20170514] Test Message
+```js
+log('Test Message','YYYY:MM');
+// [2017:05] Test Message
+```
 
-<code> log('Test Message','[YYYY:MM:DD]'); </code>
-<br/>// [017:0:14] Test Message
+```js
+log('Test Message','YYYY');
+// [2017] Test Message
+```
 
-<code> log('Test Message','YYYY/MM/DD'); </code>
-<br/>// [2017/05/14] Test Message
+```js
+log('Test Message','MM');
+// [05] Test Message
+```
 
-<code> log('Test Message','YYYY:MM'); </code>
-<br/>// [2017:05] Test Message
+```js
+log('Test Message','DD');
+// [14] Test Message
+```
 
-<code> log('Test Message','YYYY'); </code>
-<br/>// [2017] Test Message
+```js
+log('Test Message','HH');
+// [21] Test message
+```
 
-<code>log('Test Message','MM'); </code>
-<br/>// [05] Test Message
+```js
+log('Test Message','mm');
+// [30] Test Message
+```
 
-<code> log('Test Message','DD'); </code>
-<br/>// [14] Test Message
+```js
+log('Test Message','ss');
+// [10] Test Message
+```
 
-<code> log('Test Message','HH'); </code>
-<br/>// [21] Test message
+```js
+log('Test Message','ms'); </code>
+// [365] Test Message
+```
+---
 
-<code> log('Test Message','mm'); </code>
-<br/>// [30] Test Message
+##### Please report issues in the Git. Any Contributions are welcome. Just do the usual Pull -> commit -> push dance.  
 
-<code> log('Test Message','ss'); </code>
-<br/>// [10] Test Message
-
-<code> log('Test Message','ms'); </code>
-<br/>// [365] Test Message
+```
+P.S : This is my maiden NPM project. So any feedback is appreciated.
+``` 
